@@ -12,6 +12,16 @@ function main() {
     console.log(name)
   }
 
+  //filter out and print all the names that start with 'The'
+  const theNames = names.filter(name => {
+    return name.startsWith('The');
+  })
+
+  console.log("'The' Place Names")
+  for(name of theNames){
+    console.log(name)
+  }
+
 }
 
 main();
